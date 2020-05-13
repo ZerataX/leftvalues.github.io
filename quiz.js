@@ -75,7 +75,7 @@ function initQuestion () {
   if (cookie.questionNumber >= Object.size(questions)) {
     resetStats()
   }
-  if (getLastAnswer(cookie.questionNumber - 1) == null) {
+  if (getLastAnswer(cookie.questionNumber) == null) {
     document.getElementById('back_button').style.display = 'none'
     document.getElementById('back_button_off').style.display = 'block'
   } else {
